@@ -1,5 +1,5 @@
 const App = () => {
-	return <></>;
+	return <>Deployed Successfully!</>;
 };
 
 export default App;
