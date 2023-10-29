@@ -1,5 +1,5 @@
 const App = () => {
-	return <>Deployed Successfully!</>;
+	return <>Main Path Router</>;
 };
 
 export default App;
