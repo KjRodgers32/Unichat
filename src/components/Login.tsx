@@ -1,25 +1,23 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
-import "firebase/app";
-import {
-	signInWithRedirect,
-	GoogleAuthProvider,
-	FacebookAuthProvider,
-} from "firebase/auth";
+
+import { signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase";
+import { GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
+
+import "firebase/app";
 import "../styles/Login.css";
 
 const Login: React.FC = () => {
-	const googleProvider = new GoogleAuthProvider();
-	const facebookProvider = new FacebookAuthProvider();
-
 	return (
 		<div id="login-page">
 			<div id="login-card">
-				<h2>Welcomne to Unichat!</h2>
+				<h2>Welcome to Unichat!</h2>
 				<div
 					className="login-button google"
-					onClick={() => signInWithRedirect(auth, googleProvider)}
+					onClick={() => {
+						signInWithPopup(auth, new GoogleAuthProvider());
+					}}
 				>
 					<GoogleOutlined /> Sign in with Google
 				</div>
@@ -27,7 +25,7 @@ const Login: React.FC = () => {
 				<br />
 				<div
 					className="login-button facebook"
-					onClick={() => signInWithRedirect(auth, facebookProvider)}
+					onClick={() => signInWithPopup(auth, new FacebookAuthProvider())}
 				>
 					<FacebookOutlined /> Sign in with Facebook
 				</div>
