@@ -43,7 +43,7 @@ const Chats: React.FC = () => {
 			.catch(() => {
 				const formdata = new FormData();
 				formdata.append("email", user.email!);
-				formdata.append("username", user.displayName!);
+				formdata.append("username", user.email!);
 				formdata.append("secret", user.uid);
 
 				getFile(user.photoURL as string).then((avatar) => {
