@@ -6,7 +6,6 @@ export default defineConfig({
 	plugins: [viteCommonjs(), react()],
 	build: {
 		outDir: "build",
-		manifest: true,
 	},
 	optimizeDeps: {
 		esbuildOptions: {
