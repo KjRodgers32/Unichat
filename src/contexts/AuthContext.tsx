@@ -28,14 +28,13 @@ export const AuthProvider = ({
 	useEffect(() => {
 		const unsub = auth.onAuthStateChanged((user) => {
 			if (user) {
-				console.log(user.email);
 				setUser(user);
 				setLoading(false);
 				navigate("/chats");
 			} else {
 				setUser(null);
 				setLoading(false);
-				navigate("/login");
+				navigate("/");
 				console.log("error");
 			}
 		});
