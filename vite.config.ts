@@ -9,7 +9,7 @@ export default defineConfig({
 		manifest: true,
 		rollupOptions: {
 			// overwrite default .html entry
-			input: "//Users/kjrodgers/TypeScript/Learning/React/unichat/src/main.tsx",
+			input: "src/main.tsx",
 		},
 	},
 	optimizeDeps: {
