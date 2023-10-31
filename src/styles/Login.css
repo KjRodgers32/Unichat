@@ -47,3 +47,7 @@
 #login-card > .facebook {
 	background-color: rgba(35, 35, 241, 1);
 }
+
+.logout-tab {
+	cursor: pointer;
+}
