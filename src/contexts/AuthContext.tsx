@@ -14,6 +14,7 @@ type AuthContextType = null | User;
 
 const AuthContext = createContext<AuthContextType>(null);
 
+//eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({
@@ -35,7 +36,6 @@ export const AuthProvider = ({
 				setUser(null);
 				setLoading(false);
 				navigate("/");
-				console.log("error");
 			}
 		});
 
