@@ -6,6 +6,11 @@ export default defineConfig({
 	plugins: [viteCommonjs(), react()],
 	build: {
 		outDir: "build",
+		manifest: true,
+		rollupOptions: {
+			// overwrite default .html entry
+			input: "/path/to/main.tsx",
+		},
 	},
 	optimizeDeps: {
 		esbuildOptions: {
