@@ -1,0 +1,41 @@
+{
+  "___bundle-2aa1a987-21887e10.js": {
+    "file": "assets/__bundle-2aa1a987-21887e10.js",
+    "imports": [
+      "src/main.tsx"
+    ],
+    "isDynamicEntry": true
+  },
+  "___bundle-40c7abbd-c79f55fa.js": {
+    "file": "assets/__bundle-40c7abbd-c79f55fa.js",
+    "imports": [
+      "src/main.tsx"
+    ],
+    "isDynamicEntry": true
+  },
+  "node_modules/@sendbird/uikit-react/WebAudioUtils-31f7c8eb.js": {
+    "file": "assets/WebAudioUtils-31f7c8eb-78a50fae.js",
+    "imports": [
+      "src/main.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@sendbird/uikit-react/WebAudioUtils-31f7c8eb.js"
+  },
+  "src/main.css": {
+    "file": "assets/main-358e11c0.css",
+    "src": "src/main.css"
+  },
+  "src/main.tsx": {
+    "css": [
+      "assets/main-358e11c0.css"
+    ],
+    "dynamicImports": [
+      "___bundle-2aa1a987-21887e10.js",
+      "___bundle-40c7abbd-c79f55fa.js",
+      "node_modules/@sendbird/uikit-react/WebAudioUtils-31f7c8eb.js"
+    ],
+    "file": "assets/main-dc2fd501.js",
+    "isEntry": true,
+    "src": "src/main.tsx"
+  }
+}

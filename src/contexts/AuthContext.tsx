@@ -10,9 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import { User } from "firebase/auth";
 
-type AuthContextType = null | User;
-
-const AuthContext = createContext<AuthContextType>(null);
+const AuthContext = createContext<null | User>(null);
 
 //eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);
@@ -23,7 +21,7 @@ export const AuthProvider = ({
 	children: ReactElement | JSX.Element | ReactNode;
 }) => {
 	const [loading, setLoading] = useState(true);
-	const [user, setUser] = useState<AuthContextType>(null);
+	const [user, setUser] = useState<null | User>(null);
 	const navigate = useNavigate();
 
 	useEffect(() => {
